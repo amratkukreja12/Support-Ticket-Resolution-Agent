@@ -1,0 +1,25 @@
+job_task/
+├── .env                    # Your AWS credentials (add your keys here)
+├── .gitignore             # Git ignore file
+├── README.md              # Project documentation  
+├── SETUP.md               # Setup instructions
+├── requirements.txt       # Python dependencies
+├── langgraph.json         # LangGraph configuration
+├── main.py               # CLI entry point
+├── config/
+│   ├── __init__.py
+│   └── credentials.py     # AWS Bedrock configuration
+├── src/
+│   ├── __init__.py
+│   ├── core/
+│   │   ├── __init__.py
+│   │   ├── agent.py       # Main LangGraph workflow
+│   │   └── nodes.py       # Individual workflow nodes
+│   ├── models/
+│   │   ├── __init__.py
+│   │   └── models.py      # Pydantic data models
+│   └── services/
+│       ├── __init__.py
+│       ├── llm_client.py  # AWS Bedrock client
+│       └── knowledge_base.py # Mock RAG system
+└── venv/                  # Virtual environment (keep this)
